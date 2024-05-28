@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+:root{
+    --border-radius:10px;
+    --white-color: white;
+    --black-color: black;
+
+
+}
+
+body{
+    height: 100vh;
+    background: url(images/question.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    
+    max-width: 650px;
+    height: 550px;
+    padding: 25px;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    
+}
+
+.container .contain-container{
+    
+    
+
+}
+
+.container h2{
+    text-decoration: underline;
+    
+    padding: .7rem;
+    margin: 1rem 0 3rem;
+    text-align: center;
+}
+
+.container .contain-container .question{
+    padding-bottom: 10px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border-bottom: solid 2px gray;
+    position: relative;
+}
+.container .contain-container .answer{
+    
+    height: 0;
+    overflow: hidden; 
+    transition: .5s;
+}
+
+.container .contain-container .question::after{
+    content: "+";
+    position: absolute;
+    right: 1.5rem;
+}
+
+/* javascript styling */
+
+.container .contain-container.active .answer{
+    
+    height: 100px;
+    transition: .5s;
+}
+
+.container .contain-container.active .question{
+    font-size: 15px;
+    transition: .5s;
+}
+
+
+.container .contain-container.active .question::after{
+    content: "-";
+   
+}
