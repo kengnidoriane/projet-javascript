@@ -1,1 +1,1 @@
-ceci est un petite application pour taper des mots ou des phrases et ainsi apprendre a taper sur un clavier 
+This is an application for typing words or sentences and thus learning to type on a keyboard
